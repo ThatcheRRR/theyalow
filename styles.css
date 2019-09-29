@@ -1,0 +1,823 @@
+@import url(//db.onlinewebfonts.com/c/3fdb879e1f60a0c91e9b4bee114a0928?family=Segoe+WP+Light);
+@font-face {
+    font-family: "Segoe WP Light"; src: url("//db.onlinewebfonts.com/t/3fdb879e1f60a0c91e9b4bee114a0928.eot"); src: url("//db.onlinewebfonts.com/t/3fdb879e1f60a0c91e9b4bee114a0928.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3fdb879e1f60a0c91e9b4bee114a0928.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3fdb879e1f60a0c91e9b4bee114a0928.woff") format("woff"), url("//db.onlinewebfonts.com/t/3fdb879e1f60a0c91e9b4bee114a0928.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3fdb879e1f60a0c91e9b4bee114a0928.svg#Segoe WP Light") format("svg"); 
+}
+@import url(//db.onlinewebfonts.com/c/5076583fa2a14cd2cf3634ff59a1138b?family=Segoe+UI+Light);
+@font-face {
+    font-family: "Segoe UI Light"; src: url("//db.onlinewebfonts.com/t/5076583fa2a14cd2cf3634ff59a1138b.eot"); src: url("//db.onlinewebfonts.com/t/5076583fa2a14cd2cf3634ff59a1138b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/5076583fa2a14cd2cf3634ff59a1138b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/5076583fa2a14cd2cf3634ff59a1138b.woff") format("woff"), url("//db.onlinewebfonts.com/t/5076583fa2a14cd2cf3634ff59a1138b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/5076583fa2a14cd2cf3634ff59a1138b.svg#Segoe UI Light") format("svg"); 
+}
+@font-face {
+    font-family: "Lucida Sans Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Lucida Sans Italic"), url("fonts/LSANSI.woff") format("woff");
+}
+@font-face {
+    font-family: "Lucida Sans";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Lucida Sans"), url("LucidaSansRegular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Segoe WP N";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Segoe WP N"), url("SegoeWPN.woff") format("woff");
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    margin: 0 auto;
+    width: 1300px;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    margin-left: 10.8%;
+    margin-right: 10.8%;
+}
+.header-logo {
+    height: 100%;
+    width: 100%
+}
+.text {
+    display: inline-block;
+    font-family: "Lucida Sans";
+    font-style: italic;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 2px 2px 2px #1a1a1a;
+}
+header {
+    position: absolute;
+    width: 1300px;
+}
+.top-logo-image {
+    height: 83px;
+    width: 83px;
+    margin-top: 28px;
+    float: left;
+}
+.navlogo {
+    display: none;
+}
+h1 {
+    margin-top: 50px;
+    margin-left: 4px;
+    float: left;
+    font-size: 41.05px;
+    font-weight: 100;
+}
+nav {
+    margin-top: 71px;
+    float: right;
+    flex-wrap: nowrap;
+    background-color: #f5c506;
+    box-shadow: -4px -5px rgba(185, 148, 3, 50%);
+}
+.icon {
+    display: inline-block;
+}
+.shadow {
+    display: inline-flex;
+    box-shadow: -8px -8px rgba(185, 148, 3, 25%);
+}
+.navgroup:not(:last-child) {
+    border-right: 1px solid #b99403;
+}
+.navgroup a {
+    margin-left: 0px;
+    display: inline-flex;
+    padding: 9px 19px 9px 18px;
+}
+.navgroup a:hover {
+    padding: 9px 19px 6px 18px;
+    border-bottom: 3px solid #fff;
+}
+.navgroup a:active {
+    padding: 9px 19px 6px 18px;
+    border-bottom: 3px solid #000;
+}
+.nav-text {
+    display: inline-block;
+    margin-left: 6px; 
+    font-family: "Segoe WP N";
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #b99403;
+}
+.shadow:first-child {
+    padding-left: 25px;
+}
+.shadow:last-child {
+    padding-right: 8px;
+}
+.main-image {
+    height: 566px;
+    background-image: url("img/upper-background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.mid-image {
+    position: relative;
+    z-index: 2;
+    height: 212px;
+    background-image: url("img/mid-background.png");
+    background-size: 100% 100%;
+    box-shadow: 0px 0px 5px 1px #1a1a1a;
+}
+.main-vid {
+    margin-top: 168px;
+    margin-left: 0.8%;
+    margin-right: 3.8%;
+    float: left;
+    width: 549px;
+    height: 327px;
+    opacity: 0.75;
+}
+.slogan {
+    display: inline-block;
+    margin-top: 244px;
+    margin-left: 12px;
+    font-family: "Asap", sans-serif;
+    font-size: 65px;
+    text-transform: uppercase;
+    color: #f5c506;
+    text-align: center;
+    word-spacing: 5px;
+    letter-spacing: -2px;
+}
+.slogan > span {
+    color: #fff;
+}
+.button-left {
+    position: relative;
+    left: -736px;
+    bottom: 95px;
+    display: inline-block;
+    width: 32px;
+    height: 57px;
+    background-color: #c6a00c;
+}
+.button-right {
+    position: relative;
+    left: 496px;
+    bottom: 94px;
+    display: inline-block;
+    width: 32px;
+    height: 57px;
+    background-color: #f5c506;
+}
+.button {
+    margin-top: 19px;
+}
+.but-left {
+    margin-left: 8px;
+}
+.but-right {
+    margin-left: 11px;
+}
+.middle {
+    display: inline-flex;
+    width: 100%;
+}
+.mid {
+    height: 100%;
+    width: 340px;
+    padding: 37px 37px 31px 37px;
+    text-align: center;
+    border-right: 1px solid #cfcfcf;
+}
+.mid:first-child {
+    border-left: 1px solid #cfcfcf;
+}
+.mid-text {
+    font-family: "Segoe UI Light";
+    font-size: 27px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #000;
+}
+.mtf {
+    margin-top: 5.5px;
+    margin-left: 20px;
+}
+.mts {
+    margin-left: 24px;
+    margin-top: 9px;
+}
+.mtt {
+    margin-top: 5.5px;
+    margin-right: 16px;
+}
+.mi-f {
+    margin-top: 23px;
+    margin-right: 7px;
+}
+.mi-s {
+    margin-left: 21px;
+}
+.mi-t {
+    margin-top: 15px;
+    margin-right: 20px;
+}
+.under-mid {
+    position: relative;
+    z-index: 1;
+    height: 508px;
+    background-image: url("img/under-mid.png");
+    background-size: 100% 100%;
+}
+.under-flex {
+    display: flex;
+}
+.under-par {
+    display: inline-block;
+    margin-top: 32px;
+    margin-bottom: 30px;
+    font-family: "PT Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 37.05px;
+    color: #fff;
+}
+.underbox {
+    display: flex;
+}
+.un-block, .twitbox {
+    background-color: #ec9e03;
+}
+.un-block {
+    width: 341px;
+    padding: 16px 37px 0px 32px;
+    text-align: left;
+    box-sizing: border-box;
+}
+.under-text {
+    word-spacing: 9px;
+    font-family: "Segoe WP Light";
+    color: #fff;
+    font-size: 25px;
+    line-height: 38px;
+}
+.un-block .plus {
+    margin-left: 283px;
+}
+.under-vid {
+    display: inline-block;
+    height: inherit;
+}
+.twitbox {
+    width: 329px;
+    height: inherit;
+    margin-left: 36px;
+}
+.twitbox .plus {
+    left: 57px;
+    top: 31px;
+}
+.plus {
+    position: relative;
+    display: inline-block;
+    transition-property: transform;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+}
+.plus:hover {
+    transform: rotate(45deg);
+}
+.twitter {
+    margin-top: 10px;
+    margin-left: 82px;
+}
+.twittext {
+    margin-top: 12px;
+    margin-left: 280px;
+    font-family: "Segoe WP N"; 
+    color: #fff;
+    font-size: 25.05px; 
+}
+.date {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 27px;
+    text-align: center;
+    background-color: #ddb101;
+}
+.day {
+    display: inline-block;
+    margin-bottom: -5px;
+    font-family: "Segoe WP N";
+    font-size: 51px;
+    line-height: 60px;
+    font-weight: bold;
+    color: #fff;
+}
+.month {
+    display: inline-block;
+    padding-bottom: 5px;
+    font-family: "Segoe WP N";
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #b26529;
+}
+#scrollbar {
+    display: block;
+    width: 896px;
+    margin-top: 27px;
+    margin-left: 75px;
+}
+input[type="range"] {
+    margin: 33px 51px 0px 73px;
+    width: 897px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.above-footer {
+    background-image: url("img/above-footer.png");
+    background-size: 100% 100%;
+}
+.desktop-logo {
+    margin: 55px 12px 97px 12px;
+}
+.pad-logo {
+    margin: 99px 12px 135px 9px;
+}
+.phone-logo {
+    margin: 209px 80px 135px 7px;
+}
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}   
+.paragraph {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.paragraph p {
+    margin-top: 35px;
+    text-transform: uppercase;
+    color: #f5c506;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 43px;
+    word-spacing: 7px;
+    letter-spacing: -1px;
+}
+.images {
+    margin-top: -10px;
+    margin-left: 5px;
+}
+.list {
+    font-size: 22px;
+    color: #a9a9a7;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+li {
+    margin-top: 5px;
+    margin-left: 35px;
+    font-size: 45px;
+    color: #f5c506;
+}
+ul {
+    width: 380px;
+    margin-top: 85px;
+    line-height: 30px;
+}
+.circle {
+    position: absolute;
+    margin-top: 95px;
+    margin-left: -2px;
+    height: 116px;
+    width: 116px;
+    text-align: center;
+    border-radius: 100%;
+    background-color: #f5c506;
+}
+.circle p {
+    display: inline-block;
+    margin-top: 45px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+footer {
+    background-color: #4c4c4c;
+    box-shadow: 0px -2px 6px #1a1a1a;
+}
+.bot-logo-image {
+    height: 54px;
+    width: 54px;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    float: left;
+}
+.bot-logo-text {
+    display: inline-block;
+    margin-top: 23px;
+    margin-left: 9px;
+    margin-bottom: 20px;
+    font-size: 29px;
+}
+.tweets, 
+form, 
+.main-vid-mobile {
+    display: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 12.8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 25px;
+    border: 0px solid #000101;
+}
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 0px solid #000000;
+    height: 13px;
+    width: 195px;
+    border-radius: 7px;
+    background: #ec9e03;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: rgba(255, 255, 255, 0.25);
+}
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 12.8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 25px;
+    border: 0px solid #000101;
+}
+input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 0px solid #000000;
+    height: 20px;
+    width: 39px;
+    border-radius: 7px;
+    background: #ec9e03;
+    cursor: pointer;
+}
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 12.8px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 39px 0;
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: rgba(255, 255, 255, 0.25);
+    border: 0px solid #000101;
+    border-radius: 50px;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+    background: rgba(255, 255, 255, 0.25);
+    border: 0px solid #000101;
+    border-radius: 50px;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 0px solid #000000;
+    height: 20px;
+    width: 39px;
+    border-radius: 7px;
+    background: #ec9e03;
+    cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: rgba(255, 255, 255, 0.25);
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: rgba(255, 255, 255, 0.25);
+}
+@media (max-device-width: 640px) {
+    html, header {
+        width: 640px;
+        margin: 0 0;
+    }
+    header {
+        height: 62px;
+    }
+    .un-par, 
+    .main-vid, 
+    .buttons, 
+    ul, 
+    .slogan, 
+    .date, 
+    #scrollbar, 
+    .header-logo, 
+    .plus-none > img, 
+    .plus-none, 
+    .twittext {
+        display: none;
+    }
+    .desktop-logo, 
+    .pad-logo, 
+    .phone-logo, 
+    h1 {
+        margin: 0;
+    }
+    .container {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .navgroup:first-child {
+        border: none;
+    }
+    .navlogo {
+        display: inline-block;
+        width: 186px;
+        background-color: #4c4c4c;
+    }
+    .shadow:first-child {
+        padding-left: 0;
+    }
+    .shadow:last-child {
+        padding-right: 0;
+    }
+    .shadow, 
+    nav {
+        width: 100%;
+        box-shadow: 0;
+    }
+    nav {
+        margin: 0;
+        display: flex;
+        width: 100%;
+        height: 62px;
+        background-color: #eec006;
+    }
+    .navgroup a {
+        padding: 19px 9px 6px 11px;
+    }
+    .navgroup a:hover {
+        padding: 19px 9px 14px 11px;
+        border-bottom: 3px solid #fff;
+    }
+    .navgroup a:active {
+        padding: 19px 9px 14px 11px;
+        border-bottom: 3px solid #000;
+    }
+    .mid-image {
+        box-shadow: 0px 0px 5px 1px #fff;
+    }
+    .navlogo-image {
+        width: 40px;
+        height: 40px;
+        margin: 12px 8px 12px 12px;
+        float: left;
+        text-align: center;
+    }
+    .navlogo-text {
+        margin-top: 22px;
+        font-family: 'Lucida Sans Italic';
+        font-size: 19px;
+        color: #fff;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 2px #1a1a1a;
+    }
+    .nav-text {
+        font-size: 19px;
+    }
+    .nav-f {
+        padding-left: 13px;
+        padding-right: 17px;
+    }
+    .icon {
+        margin-left: 0px;
+        margin-right: 7px;
+    }
+    .main-vid-mobile {
+        display: inline-block;
+        margin: 0;
+        margin-top: 62px;
+        width: 640px;
+    }
+    .main-image {
+        height: 388px;
+    }
+    .mid-image {
+        height: 162px;
+    }
+    .mi-f, 
+    .mi-s, 
+    .mi-t, 
+    .twitbox {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .mtf {
+        margin-top: 13.5px;
+        margin-left: 0px;
+    }
+    .mi-f {
+        height: 60px;
+        width: 90px;
+    }
+    .mi-s {
+        height: 72px;
+        margin-top: 10px;
+        margin-left: 21px;
+    }
+    .mi-t {
+        height: 71px;
+        margin-right: 23px;
+        margin-top: 10px;
+    }
+    .mid {
+        width: 100%/3;
+        padding: 0px 37px 0px 37px;
+    }
+    .underbox {
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    .paragraph p {
+        margin-top: 28px;
+        margin-left: 6px;
+        margin-right: 17px;
+        word-spacing: 7px;
+        letter-spacing: -1px;
+    }
+    .under-text {
+        font-family: "Segoe WP Light";
+        line-height: 34px;
+        word-spacing: 2px;
+        font-size: 29px;
+    }
+    .circle {
+        left: 29px;
+        top: 1065px;
+    }
+    .desktop-logo {
+        margin-top: 71px;
+        margin-right: 0px;
+        margin-bottom: 55px
+    }
+    .pad-logo {
+        margin-left: 21px;
+        margin-right: 5px;
+        margin-bottom: 95px; 
+    }
+    .phone-logo {
+        margin-left: 14px;
+        margin-bottom: 95px;
+    }
+    .images {
+        margin-left: 57px;
+        margin-right: 43px;
+        margin-top: -2px;
+        text-align: center;
+    }
+    .mid, .mid:first-child {
+        border: none;  
+    }
+    .under-mid {
+        height: 100%;
+        background: #fff;
+    }
+    .twitter {
+        float: left;
+        margin-top: 58px;
+        margin-left: 84px;
+    }
+    .twitbox {
+        margin-left: 0;
+        width: 100%;
+        background-color: #f5c507;
+    }
+    .under-flex {
+        margin-top: 16px;
+        flex-wrap: wrap;
+    }
+    .un-block {
+        width: 298px;
+        padding: 14px 37px 0px 26px;
+        margin-right: 10px;
+    }
+    footer .container {
+        margin-left: 65px;
+    }
+    .bot-logo-image {
+        height: 31px;
+        width: 31px;
+        margin-bottom: 0;
+        margin-top: 3px;
+    }
+    .bot-logo-text {
+        margin-top: 10px;
+        margin-left: 8px;
+        margin-bottom: 11px;
+        font-size: 17px;
+    }
+    .break {
+        display: none;
+    }
+    .mid-text {
+        font-size: 23px; 
+    }
+    .mid {
+        margin-top: 20px;
+        padding: 0;
+    }
+    .mid:first-child {
+        margin-left: -16px;
+        margin-top: 35px;
+    }
+    .mid:last-child {
+        margin-right: -14px;
+    }
+    .tweets {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .tweet {
+        margin-left: 87px;
+        margin-right: 32px;
+        display: inline-block;
+        width: 275px;
+        padding-top: 8px;
+        padding-left: 20px;
+        padding-bottom: 4px;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        color: #afaeae;
+        text-align: left;
+        border-radius: 10px;
+    }
+    .tweet-f {
+        margin-top: 22px;
+        margin-bottom: 14px;
+        background-color: rgba(255, 255, 255, 1);
+    }
+    .tweet-s {
+        margin-bottom: 14px;
+        background-color: rgba(255, 255, 255, 0.75);
+    }
+    .tweet-t {
+        margin-bottom: 14px;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    input[type = "submit"] {
+        height: 29px;
+        width: 72px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        border: none;
+        color: #fff;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;  
+        background-color: #e9a826; 
+    }
+    input[type = "text"] {
+        height: 27px;
+        width: 212px;
+        margin-left: 17px;
+        margin-right: -16px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border: none;
+    }
+    form {
+        display: inline-block;
+        margin-left: 320px;
+        margin-bottom: 13px;
+    }
+    .author {
+        margin-top: -15px;
+    }
+}
