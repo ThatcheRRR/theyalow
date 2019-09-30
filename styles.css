@@ -10,7 +10,7 @@
     font-family: "Lucida Sans Italic";
     font-style: normal;
     font-weight: normal;
-    src: local("Lucida Sans Italic"), url("fonts/LSANSI.woff") format("woff");
+    src: local("Lucida Sans Italic"), url("assets/LSANSI.woff") format("woff");
 }
 @font-face {
     font-family: "Lucida Sans";
@@ -76,7 +76,7 @@ nav {
     float: right;
     flex-wrap: nowrap;
     background-color: #f5c506;
-    box-shadow: -4px -5px rgba(185, 148, 3, 50%);
+	box-shadow: -4px -5px rgba(185, 148, 3, 50%);
 }
 .icon {
     display: inline-block;
@@ -117,7 +117,7 @@ nav {
 }
 .main-image {
     height: 566px;
-    background-image: url("img/upper-background.png");
+    background-image: url("assets/upper-background.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -125,7 +125,7 @@ nav {
     position: relative;
     z-index: 2;
     height: 212px;
-    background-image: url("img/mid-background.png");
+    background-image: url("assets/mid-background.png");
     background-size: 100% 100%;
     box-shadow: 0px 0px 5px 1px #1a1a1a;
 }
@@ -228,7 +228,7 @@ nav {
     position: relative;
     z-index: 1;
     height: 508px;
-    background-image: url("img/under-mid.png");
+    background-image: url("assets/under-mid.png");
     background-size: 100% 100%;
 }
 .under-flex {
@@ -336,7 +336,7 @@ input[type="range"] {
     cursor: pointer;
 }
 .above-footer {
-    background-image: url("img/above-footer.png");
+    background-image: url("assets/above-footer.png");
     background-size: 100% 100%;
 }
 .desktop-logo {
@@ -432,13 +432,13 @@ form,
     display: none;
 }
 input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 8.4px;
-  cursor: pointer;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  background: #3071a9;
-  border-radius: 1.3px;
-  border: 0.2px solid #010101;
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #3071a9;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
 }
 input[type=range] {
     -webkit-appearance: none;
@@ -523,6 +523,22 @@ input[type=range]:focus::-ms-fill-lower {
 }
 input[type=range]:focus::-ms-fill-upper {
     background: rgba(255, 255, 255, 0.25);
+}
+@supports (-ms-ime-align:auto) {
+    input[type=range] {
+        margin: 0 0;
+    }
+    #scrollbar {
+        margin-top: -7px;
+    }
+    .mid {
+        padding-top: 42px;
+    }
+}
+@-moz-document url-prefix() {
+    .mid {
+        padding-top: 41px;
+    }
 }
 @media (max-device-width: 640px) {
     html, header {
