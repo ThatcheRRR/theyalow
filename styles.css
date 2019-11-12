@@ -1,11 +1,3 @@
-@import url(//db.onlinewebfonts.com/c/3fdb879e1f60a0c91e9b4bee114a0928?family=Segoe+WP+Light);
-@font-face {
-    font-family: "Segoe WP Light"; src: url("//db.onlinewebfonts.com/t/3fdb879e1f60a0c91e9b4bee114a0928.eot"); src: url("//db.onlinewebfonts.com/t/3fdb879e1f60a0c91e9b4bee114a0928.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3fdb879e1f60a0c91e9b4bee114a0928.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3fdb879e1f60a0c91e9b4bee114a0928.woff") format("woff"), url("//db.onlinewebfonts.com/t/3fdb879e1f60a0c91e9b4bee114a0928.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3fdb879e1f60a0c91e9b4bee114a0928.svg#Segoe WP Light") format("svg"); 
-}
-@import url(//db.onlinewebfonts.com/c/5076583fa2a14cd2cf3634ff59a1138b?family=Segoe+UI+Light);
-@font-face {
-    font-family: "Segoe UI Light"; src: url("//db.onlinewebfonts.com/t/5076583fa2a14cd2cf3634ff59a1138b.eot"); src: url("//db.onlinewebfonts.com/t/5076583fa2a14cd2cf3634ff59a1138b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/5076583fa2a14cd2cf3634ff59a1138b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/5076583fa2a14cd2cf3634ff59a1138b.woff") format("woff"), url("//db.onlinewebfonts.com/t/5076583fa2a14cd2cf3634ff59a1138b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/5076583fa2a14cd2cf3634ff59a1138b.svg#Segoe UI Light") format("svg"); 
-}
 @font-face {
     font-family: "Lucida Sans Italic";
     font-style: normal;
@@ -13,16 +5,52 @@
     src: local("Lucida Sans Italic"), url("assets/LSANSI.woff") format("woff");
 }
 @font-face {
-    font-family: "Lucida Sans";
+    font-family: "SegoeUI";
     font-style: normal;
     font-weight: normal;
-    src: local("Lucida Sans"), url("LucidaSansRegular.ttf") format("truetype");
+    src: local("SegoeUI"), url("assets/SegoeUI.woff") format("woff");
+}
+@font-face {
+    font-family: "SegoeUI-Light";
+    font-style: normal;
+    font-weight: normal;
+    src: local("SegoeUI-Light"), url("assets/SegoeUI-Light.woff") format("woff");
+}
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    src: local("PT Sans"), url("assets/PTS55F.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Segoe WP Light";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Segoe WP Light"), url("assets/Segoe WP Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Open Sans"), url("assets/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Asap";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Asap-Regular"), url("assets/Asap-Regular.ttf") format("truetype");
 }
 @font-face {
     font-family: "Segoe WP N";
     font-style: normal;
     font-weight: normal;
     src: local("Segoe WP N"), url("SegoeWPN.woff") format("woff");
+}
+@font-face {
+    font-family: "SegoeWP";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Segoe WP"), url("assets/SegoeWP.ttf") format("truetype");
 }
 * {
     margin: 0;
@@ -36,44 +64,41 @@ a {
     text-decoration: none;
 }
 .container {
-    margin-left: 10.8%;
-    margin-right: 10.8%;
-}
-.header-logo {
-    height: 100%;
-    width: 100%
-}
-.text {
-    display: inline-block;
-    font-family: "Lucida Sans";
-    font-style: italic;
-    text-transform: uppercase;
-    color: #fff;
-    text-shadow: 2px 2px 2px #1a1a1a;
+    padding-left: 10.8%;
+    padding-right: 10.8%;
 }
 header {
-    position: absolute;
-    width: 1300px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: relative;
 }
-.top-logo-image {
-    height: 83px;
-    width: 83px;
-    margin-top: 28px;
-    float: left;
+header .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.header-logo {
+    margin-top: 23px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 .navlogo {
     display: none;
 }
 h1 {
-    margin-top: 50px;
-    margin-left: 4px;
-    float: left;
+    margin-top: 15px;
+    margin-left: 5px;
     font-size: 41.05px;
     font-weight: 100;
+    font-family: "Lucida Sans Italic", "Arial", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 2px 2px 2px #1a1a1a;
 }
 nav {
     margin-top: 71px;
-    float: right;
     flex-wrap: nowrap;
     background-color: #f5c506;
 	box-shadow: -4px -5px rgba(185, 148, 3, 50%);
@@ -89,22 +114,20 @@ nav {
     border-right: 1px solid #b99403;
 }
 .navgroup a {
-    margin-left: 0px;
     display: inline-flex;
-    padding: 9px 19px 9px 18px;
+    padding: 11px 18px 9px 18px;
 }
 .navgroup a:hover {
-    padding: 9px 19px 6px 18px;
+    padding: 11px 18px 6px 18px;
     border-bottom: 3px solid #fff;
 }
 .navgroup a:active {
-    padding: 9px 19px 6px 18px;
     border-bottom: 3px solid #000;
 }
 .nav-text {
     display: inline-block;
     margin-left: 6px; 
-    font-family: "Segoe WP N";
+    font-family: "SegoeWP", "Arial", sans-serif;
     font-size: 17px;
     text-transform: uppercase;
     color: #b99403;
@@ -130,46 +153,56 @@ nav {
     box-shadow: 0px 0px 5px 1px #1a1a1a;
 }
 .main-vid {
-    margin-top: 168px;
-    margin-left: 0.8%;
-    margin-right: 3.8%;
-    float: left;
+    margin-top: 57px;
     width: 549px;
     height: 327px;
     opacity: 0.75;
 }
-.slogan {
-    display: inline-block;
-    margin-top: 244px;
-    margin-left: 12px;
-    font-family: "Asap", sans-serif;
-    font-size: 65px;
-    text-transform: uppercase;
-    color: #f5c506;
-    text-align: center;
-    word-spacing: 5px;
-    letter-spacing: -2px;
+.buttons_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.slogan > span {
+.video_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slogan {
+    margin-top: 22px;
+    width: 392px;
+    margin-left: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.slogan-text {
+    font-family: "Asap", "Arial", sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 62px;
+}
+.white {
+    width: 392px;
     color: #fff;
 }
-.button-left {
-    position: relative;
-    left: -736px;
-    bottom: 95px;
-    display: inline-block;
-    width: 32px;
-    height: 57px;
-    background-color: #c6a00c;
+.yellow {
+    color: #f5c506;
 }
-.button-right {
-    position: relative;
-    left: 496px;
-    bottom: 94px;
-    display: inline-block;
+.button-right, .button-left {
+    cursor: pointer;
+    margin-top: 45px;
     width: 32px;
     height: 57px;
     background-color: #f5c506;
+}
+.button-right:hover, .button-left:hover {
+    background: #9b7f0f;
+}
+.button-right:active, .button-left:active {
+    background: #ffe16a;
 }
 .button {
     margin-top: 19px;
@@ -195,7 +228,7 @@ nav {
     border-left: 1px solid #cfcfcf;
 }
 .mid-text {
-    font-family: "Segoe UI Light";
+    font-family: "SegoeUI-Light", "Arial", sans-serif;
     font-size: 27px;
     font-weight: 100;
     text-transform: uppercase;
@@ -231,52 +264,60 @@ nav {
     background-image: url("assets/under-mid.png");
     background-size: 100% 100%;
 }
+.break-mob {
+    display: none;
+}
+.under-mid .container {
+    display: flex;
+    flex-wrap: wrap;
+}
 .under-flex {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .under-par {
     display: inline-block;
     margin-top: 32px;
     margin-bottom: 30px;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     text-transform: uppercase;
-    font-size: 37.05px;
+    font-size: 37px;
     color: #fff;
+    letter-spacing: 0.3px;
 }
 .underbox {
     display: flex;
+    max-height: 250px;
 }
 .un-block, .twitbox {
     background-color: #ec9e03;
 }
 .un-block {
-    width: 341px;
-    padding: 16px 37px 0px 32px;
-    text-align: left;
-    box-sizing: border-box;
+    width: 273px;
+    padding: 16px 37px 0px 30px;
 }
 .under-text {
-    word-spacing: 9px;
-    font-family: "Segoe WP Light";
+    font-family: "Segoe WP Light", "Arial", sans-serif;
     color: #fff;
-    font-size: 25px;
+    font-size: 27px;
+    letter-spacing: 1px;
     line-height: 38px;
 }
 .un-block .plus {
-    margin-left: 283px;
-}
-.under-vid {
-    display: inline-block;
-    height: inherit;
+    margin-left: 285px;
 }
 .twitbox {
+    margin-left: 35px;
     width: 329px;
-    height: inherit;
-    margin-left: 36px;
+}
+.twitter {
+    margin-left: 81px;
+    margin-top: 18px;
 }
 .twitbox .plus {
-    left: 57px;
-    top: 31px;
+    left: 59px;
+    top: 28px;
 }
 .plus {
     position: relative;
@@ -288,19 +329,18 @@ nav {
 .plus:hover {
     transform: rotate(45deg);
 }
-.twitter {
-    margin-top: 10px;
-    margin-left: 82px;
-}
 .twittext {
-    margin-top: 12px;
-    margin-left: 280px;
-    font-family: "Segoe WP N"; 
+    margin-top: 10px;
+    margin-left: 282px;
+    font-family: "SegoeWP", "Arial", sans-serif; 
     color: #fff;
     font-size: 25.05px; 
 }
 .date {
-    display: inline-block;
+    width: 56px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding-left: 30px;
     padding-right: 27px;
     text-align: center;
@@ -309,7 +349,7 @@ nav {
 .day {
     display: inline-block;
     margin-bottom: -5px;
-    font-family: "Segoe WP N";
+    font-family: "SegoeUI", "Arial", sans-serif;
     font-size: 51px;
     line-height: 60px;
     font-weight: bold;
@@ -317,8 +357,8 @@ nav {
 }
 .month {
     display: inline-block;
-    padding-bottom: 5px;
-    font-family: "Segoe WP N";
+    padding-bottom: 3px;
+    font-family: "SegoeUI", "Arial", sans-serif;
     font-size: 21px;
     text-transform: uppercase;
     color: #b26529;
@@ -326,7 +366,7 @@ nav {
 #scrollbar {
     display: block;
     width: 896px;
-    margin-top: 27px;
+    margin-top: 35px;
     margin-left: 75px;
 }
 input[type="range"] {
@@ -336,95 +376,102 @@ input[type="range"] {
     cursor: pointer;
 }
 .above-footer {
+    height: 496px;
     background-image: url("assets/above-footer.png");
     background-size: 100% 100%;
 }
-.desktop-logo {
-    margin: 55px 12px 97px 12px;
-}
-.pad-logo {
-    margin: 99px 12px 135px 9px;
-}
-.phone-logo {
-    margin: 209px 80px 135px 7px;
-}
-.info {
+.above-footer .container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-}   
+    justify-content: space-between;
+}
+.phone-logo, .pad-logo, .desktop-logo {
+    align-self: center;
+}
+.phone-logo {
+    margin-top: 108px;
+}
 .paragraph {
-    display: inline-block;
+    margin-bottom: 47px;
     width: 100%;
     text-align: center;
 }
-.paragraph p {
-    margin-top: 35px;
+.paragraph div {
+    margin-top: 32px;
     text-transform: uppercase;
     color: #f5c506;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', "Arial", sans-serif;
     font-size: 43px;
-    word-spacing: 7px;
-    letter-spacing: -1px;
+    word-spacing: 1px;
 }
 .images {
-    margin-top: -10px;
-    margin-left: 5px;
+    margin-left: 17px;
+    width: 540px;
+    display: flex;
+    justify-content: space-between;
 }
 .list {
     font-size: 22px;
     color: #a9a9a7;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
 }
-li {
-    margin-top: 5px;
-    margin-left: 35px;
-    font-size: 45px;
-    color: #f5c506;
-}
 ul {
     width: 380px;
-    margin-top: 85px;
-    line-height: 30px;
+    margin-top: 47px;
+}
+li {
+    margin-left: 31px;
+    line-height: 22px;
+    font-size: 40px;
+    color: #f5c506;
+}
+li:not(:last-child) {
+    margin-bottom: 22px;
 }
 .circle {
     position: absolute;
-    margin-top: 95px;
-    margin-left: -2px;
+    top: 1380px;
+    left: 440px;
     height: 116px;
     width: 116px;
     text-align: center;
     border-radius: 100%;
     background-color: #f5c506;
 }
-.circle p {
-    display: inline-block;
-    margin-top: 45px;
+.circle div {
+    margin-top: 49px;
     color: #fff;
     font-weight: bold;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', "Arial", sans-serif;
     text-transform: uppercase;
-    font-size: 17px;
+    font-size: 15px;
+    word-spacing: 3px;
 }
 footer {
     background-color: #4c4c4c;
     box-shadow: 0px -2px 6px #1a1a1a;
 }
+footer .container {
+    display: flex;
+    align-items: center;
+}
 .bot-logo-image {
     height: 54px;
     width: 54px;
-    margin-top: 12px;
+    margin-top: 6px;
     margin-bottom: 4px;
-    float: left;
 }
 .bot-logo-text {
-    display: inline-block;
-    margin-top: 23px;
-    margin-left: 9px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-left: 5px;   
+    font-family: "Lucida Sans Italic", "Arial", sans-serif;
+    font-weight: 100;
     font-size: 29px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 2px 2px 2px #1a1a1a;
 }
 .tweets, 
 form, 
@@ -540,7 +587,7 @@ input[type=range]:focus::-ms-fill-upper {
         padding-top: 41px;
     }
 }
-@media (max-device-width: 640px) {
+@media (max-width: 640px) {
     html, header {
         width: 640px;
         margin: 0 0;
@@ -558,24 +605,24 @@ input[type=range]:focus::-ms-fill-upper {
     .header-logo, 
     .plus-none > img, 
     .plus-none, 
-    .twittext {
+    .twittext, 
+    .button-left,
+    .button-right {
         display: none;
     }
     .desktop-logo, 
-    .pad-logo, 
-    .phone-logo, 
+    .pad-logo,
     h1 {
         margin: 0;
     }
     .container {
-        margin-left: 0px;
-        margin-right: 0px;
+        padding: 0;
     }
     .navgroup:first-child {
         border: none;
     }
     .navlogo {
-        display: inline-block;
+        display: flex;
         width: 186px;
         background-color: #4c4c4c;
     }
@@ -615,12 +662,11 @@ input[type=range]:focus::-ms-fill-upper {
         width: 40px;
         height: 40px;
         margin: 12px 8px 12px 12px;
-        float: left;
         text-align: center;
     }
     .navlogo-text {
         margin-top: 22px;
-        font-family: 'Lucida Sans Italic';
+        font-family: 'Lucida Sans Italic', "Arial", sans-serif;
         font-size: 19px;
         color: #fff;
         text-transform: uppercase;
@@ -639,8 +685,6 @@ input[type=range]:focus::-ms-fill-upper {
     }
     .main-vid-mobile {
         display: inline-block;
-        margin: 0;
-        margin-top: 62px;
         width: 640px;
     }
     .main-image {
@@ -679,45 +723,30 @@ input[type=range]:focus::-ms-fill-upper {
         padding: 0px 37px 0px 37px;
     }
     .underbox {
+        display: flex;
         margin-bottom: 10px;
         margin-left: 10px;
     }
-    .paragraph p {
-        margin-top: 28px;
-        margin-left: 6px;
-        margin-right: 17px;
+    .paragraph {
+        margin: 0;
+    }
+    .paragraph div {
+        margin: 28px 17px 0px 6px;
         word-spacing: 7px;
         letter-spacing: -1px;
     }
     .under-text {
-        font-family: "Segoe WP Light";
+        font-family: "SegoeWP";
         line-height: 34px;
         word-spacing: 2px;
-        font-size: 29px;
+        font-size: 25px;
     }
     .circle {
         left: 29px;
-        top: 1065px;
-    }
-    .desktop-logo {
-        margin-top: 71px;
-        margin-right: 0px;
-        margin-bottom: 55px
-    }
-    .pad-logo {
-        margin-left: 21px;
-        margin-right: 5px;
-        margin-bottom: 95px; 
-    }
-    .phone-logo {
-        margin-left: 14px;
-        margin-bottom: 95px;
+        top: 1160px;
     }
     .images {
-        margin-left: 57px;
-        margin-right: 43px;
-        margin-top: -2px;
-        text-align: center;
+        margin: 73px 43px 0px 57px;
     }
     .mid, .mid:first-child {
         border: none;  
@@ -726,24 +755,33 @@ input[type=range]:focus::-ms-fill-upper {
         height: 100%;
         background: #fff;
     }
-    .twitter {
-        float: left;
-        margin-top: 58px;
-        margin-left: 84px;
-    }
     .twitbox {
-        margin-left: 0;
+        height: 230px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
         background-color: #f5c507;
     }
+    .twitter {
+        margin-top: 17px;
+        margin-left: 84px;
+    }
     .under-flex {
+        width: 100%;
         margin-top: 16px;
         flex-wrap: wrap;
     }
     .un-block {
-        width: 298px;
-        padding: 14px 37px 0px 26px;
+        width: 235px;
+        padding: 15px 37px 0px 26px;
         margin-right: 10px;
+    }
+    .un-block .plus {
+        position: relative;
+        left: 250px;
+        bottom: 15px;
+        margin: 0px;
     }
     footer .container {
         margin-left: 65px;
@@ -760,7 +798,10 @@ input[type=range]:focus::-ms-fill-upper {
         margin-bottom: 11px;
         font-size: 17px;
     }
-    .break {
+    .break-mob {
+        display: inline;
+    }
+    .break-desk {
         display: none;
     }
     .mid-text {
@@ -778,40 +819,43 @@ input[type=range]:focus::-ms-fill-upper {
         margin-right: -14px;
     }
     .tweets {
+        height: 100%;
+        width: 275px;
+        margin-right: 32px;
+        padding-top: 20px;
         display: flex;
         flex-wrap: wrap;
+        align-items: flex-start;
     }
     .tweet {
-        margin-left: 87px;
-        margin-right: 32px;
-        display: inline-block;
+        padding-left: 19px;
+        display: flex;
+        align-items: center;
+        height: 42px;
         width: 275px;
-        padding-top: 8px;
-        padding-left: 20px;
-        padding-bottom: 4px;
-        font-family: Arial, sans-serif;
+        font-family: 'Arial', 'Helvetica', sans-serif;
         font-size: 13px;
         color: #afaeae;
         text-align: left;
         border-radius: 10px;
     }
     .tweet-f {
-        margin-top: 22px;
-        margin-bottom: 14px;
+        margin-top: 10px;
         background-color: rgba(255, 255, 255, 1);
     }
     .tweet-s {
-        margin-bottom: 14px;
         background-color: rgba(255, 255, 255, 0.75);
     }
     .tweet-t {
-        margin-bottom: 14px;
         background-color: rgba(255, 255, 255, 0.5);
+    }
+    form {
+        display: flex;
     }
     input[type = "submit"] {
         height: 29px;
         width: 72px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Arial', 'Helvetica', sans-serif;
         font-size: 15px;
         border: none;
         color: #fff;
@@ -821,19 +865,12 @@ input[type=range]:focus::-ms-fill-upper {
     }
     input[type = "text"] {
         height: 27px;
-        width: 212px;
-        margin-left: 17px;
-        margin-right: -16px;
+        width: 204px;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         border: none;
     }
-    form {
-        display: inline-block;
-        margin-left: 320px;
-        margin-bottom: 13px;
-    }
-    .author {
-        margin-top: -15px;
+    .above-footer {
+        height: 468px;
     }
 }
